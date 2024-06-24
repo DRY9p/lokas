@@ -29,7 +29,8 @@ set :branch, 'main'
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
-
+set :default_env, { path: "/home/deploy/lokas/.rbenv-vars" }
+#Ex:- :default =>''
 # Default value for local_user is ENV['USER']
 # set :local_user, -> { `git config user.name`.chomp }
 
