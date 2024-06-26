@@ -1,4 +1,4 @@
-<section class="bg-white dark:bg-slate-900">
+<section class="bg-slate-900 dark:bg-slate-900">
     <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
         <div class="mr-auto place-self-center lg:col-span-7">
             <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">IT Инфраструктура для вашего предприятия</h1>
@@ -57,15 +57,55 @@
     </div>
 </div> 
 -->
-  <!-- Slide 1 -->
-  <div class="rounded-md sticky top-0 h-screen flex flex-col items-center justify-center bg-blue-500">
-    <h1 class="text-white text-4xl font-bold">Slide 1 (scroll down)</h1>
+  
+  <!-- Slide 1 
+  <div class="rounded-md sticky top-0 h-screen flex flex-col items-center justify-center bg-gray-100">
+    <h1 class="text-white text-4xl font-bold">Slide 1 (scroll down)
+      <%= image_tag 'abstract.svg', width: 1000, class: "mt-6 h-screen flex" %>
+    </h1>
+  </div>
+-->
+<section>
+  <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8 bg-gradient-to-l from-emerald-500 from-10 rounded-3xl">
+    <div class="max-w-3xl">
+      <h2 class="text-3xl font-bold sm:text-4xl text-white">
+        О компании
+      </h2>
+    </div>
+
+    <div class="mt-10 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
+      <%= image_tag 'server.svg', class: "relative h-64 rounded-xl overflow-hidden sm:h-80 lg:h-full" %>
+
+      <div class="lg:py-20">
+        <article class="space-y-4 text-lg text-gray-100">
+          <p>
+            Группа компаний ЛОКАС, успешно работает на рынке IT (информационных технологий) с весны 1999г. Основным видом деятельности компании, является предоставление услуг IT Аутсорсинга в рамках долгосрочных договоров. С нами, Вы получаете целый IT отдел разнопрофильных специалистов, а не одного единственного штатного системного администратора.
+          </p>
+
+          <p>
+            Мы оказывает весь спектр услуг, связанных с созданием, управлением, развитием и поддержкой ИТ и телекоммуникационной инфраструктуры заказчика. За более чем 12 летний стаж работы на рынке данных услуг компания накопила значительный опыт проектирования и внедрения решений и оказывает полный спектр услуг технической поддержки, ИТ-аутсорсинга и ИТ-консалтинга, производит консультирование клиентов по вопросам функционирования решений и многое другое.
+          </p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <div class="rounded-md sticky top-0 flex-col h-screen flex items-center justify-center">
+    <figure class="relative transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
+      <%= image_tag 'data_center.jpg', class: "size-full md: h-screen flex blur-sm" %>
+      <figcaption class="absolute px-10 text-xl text-white text-justify bottom-10 h-screen flex items-center justify-center">
+          <p></p>
+      </figcaption>
+    </figure>
   </div>
 
   <!-- Slide 2 -->
-  <div class="rounded-md sticky top-0 flex-col h-screen flex items-center justify-center bg-green-500">
-    <h1 class="text-white text-4xl font-bold">Slide 2 (scroll down)</h1>
+  <div class="rounded-md sticky top-0 flex-col h-screen flex items-center justify-center">
+    <!--1 class="text-white text-4xl font-bold">Slide 2 (scroll down)</h1-->
+    <%= image_tag 'data_center.jpg', class: "size-full md: h-screen flex blur-sm"%>
   </div>
+  <!--%= image_tag 'data_center.jpg', class: "rounded-md sticky top-0 flex-col h-screen flex items-center justify-center" %-->
 
   <!-- Slide 3 -->
   <div class="rounded-md sticky top-0 flex-col h-screen flex items-center justify-center bg-red-500">

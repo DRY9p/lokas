@@ -1,4 +1,5 @@
-server '158.160.82.232', user: 'deploy', roles: %w{app db web}
+server '158.160.86.138', user: 'deploy', roles: %w{app db web}
+
 # server-based syntax
 # ======================
 # Defines a single server with a list of roles and multiple properties.
@@ -23,7 +24,6 @@ server '158.160.82.232', user: 'deploy', roles: %w{app db web}
 # role :db,  %w{deploy@example.com}
 
 
-
 # Configuration
 # =============
 # You can set any configuration variable like in config/deploy.rb
@@ -31,7 +31,6 @@ server '158.160.82.232', user: 'deploy', roles: %w{app db web}
 # For available Capistrano configuration variables see the documentation page.
 # http://capistranorb.com/documentation/getting-started/configuration/
 # Feel free to add new variables to customise your setup.
-
 
 
 # Custom SSH Options
