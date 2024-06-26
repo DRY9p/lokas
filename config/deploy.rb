@@ -11,6 +11,7 @@ set :branch, 'main'
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, "/home/deploy/#{fetch :application}"
 
+set :passenger_environment_variables, { 'PASSENGER_INSTANCE_REGISTRY_DIR' => '/tmp' }
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
 
