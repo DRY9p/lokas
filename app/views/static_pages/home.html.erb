@@ -22,22 +22,26 @@
             <div class="grid overflow-hidden text-white shadow-xl md:grid-cols-2 bg-emerald-500 rounded-xl">
                 <aside class="p-8 space-y-4 md:p-16">
                     <h2 class="text-2xl font-bold tracking-tight md:text-4xl font-headline">
-                        IT Инфраструктура для вашего предприятия
+                        Хотите отдохнуть от городской суеты, восстановить силы и улучшить свое здоровье?
+                        Тогда вам в санаторий "Зеленая Роща"! 
                     </h2>
-
+                  
                     <p class="font-medium text-blue-100 md:text-2xl">
-                        Присоеденитесь к нам уже сегодня
+                        Присоеденитесь к нам уже сегодня. Акции и выгодные предложения уже ждут вас!
                     </p>
 
                     <div>
+                      <!-- old_solution
                         <a href="" class="bg-white text-slate-600 px-4 py-2 mt-3 rounded-xl">
                             Узнать больше
                         </a>
+                      -->
+                        <%= link_to "Узнать больше",  services_path,  class: "bg-white text-slate-600 px-4 py-2 mt-3 rounded-xl" %>
                     </div>
                 </aside>
 
                 <aside class="relative hidden md:block">
-                  <%= image_tag 'data_center.jpg', class: "absolute inset-0 object-cover object-left-top w-full h-full mt-16 -mr-16 rounded-tl-lg" %>
+                  <%= image_tag 'smartphone.svg', width:50, class: "absolute inset-0 object-cover object-left-top w-full h-full mt-16 -mr-16 rounded-tl-lg" %>
                 </aside>
             </div>
         </div>
@@ -46,22 +50,22 @@
 
 <div class="">
   <div class="bg-slate-900 p-8 min-h-[350px] flex items-center justify-center font-[sans-serif] text-[#333]">
-    <div class="bg-gradient-to-l from-emerald-500 from-10 shadow-[0_4px_24px_-8px_rgba(0,0,0,0.2)] grid lg:grid-cols-4 sm:grid-cols-2 sm:gap-24 gap-12 rounded-3xl px-20 py-10">
+    <div class="bg-emerald-500 shadow-[0_4px_24px_-8px_rgba(0,0,0,0.2)] grid lg:grid-cols-4 sm:grid-cols-2 sm:gap-24 gap-12 rounded-3xl px-20 py-10">
       <div class="text-center">
-        <h3 class="text-4xl font-extrabold">5.4<span class="text-blue-600">M+</span></h3>
-        <p class="text-gray-50 font-semibold mt-3">Подключенных пользователей </p>
+        <h3 class="text-4xl font-extrabold">100 000<span class="text-blue-600"></span></h3>
+        <p class="text-gray-50 font-semibold mt-3">Клиентов благодарны нам</p>
       </div>
       <div class="text-center">
-        <h3 class="text-4xl font-extrabold">$80<span class="text-blue-600">K</span></h3>
-        <p class="text-gray-50 font-semibold mt-3">Revenue</p>
+        <h3 class="text-4xl font-extrabold">90<span class="text-blue-600"></span></h3>
+        <p class="text-gray-50 font-semibold mt-3">Категорий санаторных программ</p>
       </div>
       <div class="text-center">
-        <h3 class="text-4xl font-extrabold">100<span class="text-blue-600">K</span></h3>
-        <p class="text-gray-50 font-semibold mt-3">Engagement</p>
+        <h3 class="text-4xl font-extrabold">110<span class="text-blue-600"></span></h3>
+        <p class="text-gray-50 font-semibold mt-3">Специалистов разной направленности</p>
       </div>
       <div class="text-center">
-        <h3 class="text-4xl font-extrabold">99.9<span class="text-blue-600">%</span></h3>
-        <p class="text-gray-50 font-semibold mt-3">Server Uptime</p>
+        <h3 class="text-4xl font-extrabold">500<span class="text-blue-600"></span></h3>
+        <p class="text-gray-50 font-semibold mt-3">Организаций довольны пользоваться нашими услугами</p>
       </div>
     </div>
   </div>
@@ -97,28 +101,57 @@
   <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8 bg-gradient-to-l from-emerald-500 from-10 rounded-3xl">
     <div class="max-w-3xl">
       <h2 class="text-3xl font-bold sm:text-4xl text-white">
-        О компании
+        Почему именно мы ?
       </h2>
     </div>
 
     <div class="mt-10 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
-      <%= image_tag 'server.svg', class: "relative h-64 rounded-xl overflow-hidden sm:h-80 lg:h-full" %>
+      <%= image_tag 'medical-history.svg', class: "relative h-64 rounded-xl overflow-hidden sm:h-80 lg:h-full" %>
 
       <div class="lg:py-20">
         <article class="space-y-4 bg-slate-900 text-white px-4 py-2 mt-3 rounded-xl">
           <p>
-            Группа компаний ЛОКАС, успешно работает на рынке IT (информационных технологий) с весны 1999г. Основным видом деятельности компании, является предоставление услуг IT Аутсорсинга в рамках долгосрочных договоров. С нами, Вы получаете целый IT отдел разнопрофильных специалистов, а не одного единственного штатного системного администратора.
+            Расположенный в живописном уголке природы, наш санаторий предлагает вам:
           </p>
-
           <p>
-            Мы оказывает весь спектр услуг, связанных с созданием, управлением, развитием и поддержкой ИТ и телекоммуникационной инфраструктуры заказчика. За более чем 12 летний стаж работы на рынке данных услуг компания накопила значительный опыт проектирования и внедрения решений и оказывает полный спектр услуг технической поддержки, ИТ-аутсорсинга и ИТ-консалтинга, производит консультирование клиентов по вопросам функционирования решений и многое другое.
+            • Уникальные лечебные программы: Мы предлагаем комплексное лечение и профилактику различных заболеваний с использованием новейших методик и природных ресурсов.
+          </p>
+          <p>
+            • Профессиональный медицинский персонал: В "Зеленой Роще" работают опытные врачи и специалисты, которые подберут для вас индивидуальный курс лечения и оздоровления.
+          </p>
+          <p>
+            • Современная лечебно-диагностическая база: В вашем распоряжении - комфортные процедурные кабинеты, оснащенные современным оборудованием, а также уютные спа-зоны для релаксации.
+          </p>
+          <p>
+            • Разнообразные развлечения: Отправляйтесь на прогулки по живописным окрестностям, насладитесь активным отдыхом на свежем воздухе, посетите концерты, кинопоказы или театральные представления.
+          </p>
+          <p>
+            • Вкусное и полезное питание: Мы предлагаем сбалансированное диетическое питание, разработанное с учетом потребностей каждого отдыхающего.
+          </p>
+          <p class="center">
+            В "Зеленой Роще" вы получите:
+          </p>
+          <p>
+            • Отдых для тела и души: Отдохните от стрессов и забот, насладитесь тишиной и красотой природы.
+          </p>
+          <p>
+            • Повышение жизненного тонуса: Зарядитесь энергией и верните себе утраченное здоровье.
+          </p>
+          <p>
+            • Новые знакомства: Познакомьтесь с интересными людьми, делитесь опытом и впечатлениями.
+          </p>
+          <p>
+            Санаторий "Зеленая Роща" - это идеальное место для восстановления сил и оздоровления всей семьи!
+          </p>
+          <p>
+            Забронируйте ваш отдых прямо сейчас и откройте для себя мир здоровья и спокойствия!
           </p>
         </article>
       </div>
     </div>
   </div>
 </section>
-
+  <!-- Slides
   <div class="rounded-md sticky top-0 flex-col h-screen flex items-center justify-center">
     <figure class="relative transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
       <%= image_tag 'data_center.jpg', class: "size-full md: h-screen flex blur-sm" %>
@@ -128,24 +161,21 @@
     </figure>
   </div>
 
-  <!-- Slide 2 -->
+
   <div class="rounded-md sticky top-0 flex-col h-screen flex items-center justify-center">
-    <!--1 class="text-white text-4xl font-bold">Slide 2 (scroll down)</h1-->
     <%= image_tag 'data_center.jpg', class: "size-full md: h-screen flex blur-sm"%>
   </div>
-  <!--%= image_tag 'data_center.jpg', class: "rounded-md sticky top-0 flex-col h-screen flex items-center justify-center" %-->
 
-  <!-- Slide 3 -->
   <div class="rounded-md sticky top-0 flex-col h-screen flex items-center justify-center bg-red-500">
     <h1 class="text-white text-4xl font-bold">Slide 3 (scroll down)</h1>
   </div>
 
-  <!-- Slide 4 -->
+
   <div class="rounded-md sticky top-0 flex-col h-screen flex items-center justify-center bg-yellow-500">
     <h1 class="text-white text-4xl font-bold">Slide 4 (scroll down)</h1>
   </div>
 
-  <!-- Slide 5 -->
   <div class="rounded-md sticky top-0 h-screen flex flex-col items-center justify-center bg-indigo-500">
     <h1 class="text-white text-4xl font-bold">Slide 5</h1>
   </div>
+-->
